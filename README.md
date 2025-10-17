@@ -1,1 +1,0 @@
-# dynamic-prompt-manager
