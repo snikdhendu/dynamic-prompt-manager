@@ -1,6 +1,6 @@
 export default function Loading() {
     return (
-        <main className="relative min-h-screen w-full overflow-hidden bg-white">
+        <main className="relative min-h-screen w-full overflow-hidden bg-white mt-13">
             <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.03)_1px,transparent_1px),linear-gradient(to_right,rgba(0,0,0,0.03)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:linear-gradient(to_bottom,black_0%,black_50%,transparent_100%)]"></div>
 
             <div className="relative flex items-center justify-center min-h-screen p-4">
