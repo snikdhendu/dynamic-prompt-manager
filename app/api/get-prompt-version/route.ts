@@ -3,24 +3,24 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
     try {
-        const { name, prompt, isActive } = await req.json();
+        const { name, version } = await req.json();
 
-        if (!name || !prompt) {
+        if (!name || !version) {
             return NextResponse.json(
-                { error: "Name and prompt content are required" },
+                { error: "Prompt name and version are required" },
                 { status: 400 }
             );
         }
 
-        const newPrompt = await langfuse.createPrompt({
-            name,
-            prompt,
-            isActive,
+        const promptVersion = await langfuse.api.promptsGet({
+            promptName: name,
+            version: version,
         });
 
-        return NextResponse.json(newPrompt);
+        return NextResponse.json(promptVersion);
+
     } catch (error) {
-        console.error("Failed to create prompt:", error);
+        console.error("Failed to get prompt version:", error);
         return NextResponse.json(
             { error: "Internal Server Error" },
             { status: 500 }

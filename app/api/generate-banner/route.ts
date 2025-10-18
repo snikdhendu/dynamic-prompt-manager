@@ -1,11 +1,9 @@
-
 import { langfuse } from "@/lib/langfuse-server";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
     try {
         const { promptName, variables } = await req.json();
-
 
         const prompt = await langfuse.getPrompt(promptName);
 
