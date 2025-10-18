@@ -72,7 +72,7 @@ export function PromptManager({ initialPrompts }: PromptManagerProps) {
     }
 
     return (
-        <div className="space-y-6">
+        <div className="space-y-6  -mt-7">
             <form onSubmit={handleCreateOrUpdate} className="bg-white border border-gray-200 rounded-lg p-7 shadow-sm">
                 <h2 className="text-lg font-semibold text-gray-900 mb-6">Create or Update Prompt</h2>
                 <div className="space-y-5">

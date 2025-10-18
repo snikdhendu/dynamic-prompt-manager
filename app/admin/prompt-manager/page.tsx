@@ -27,9 +27,9 @@ export default async function PromptManagerPage() {
 
             <Link
                 href="/"
-                className="fixed top-6 right-6 z-40 px-4 py-2 bg-gray-800 text-white text-sm font-medium rounded-lg hover:bg-gray-900 transition-colors shadow-sm"
+                className="sticky top-0 lg:right-6 right-4 z-50 float-right mt-4 px-4 py-2 bg-gray-800 text-white text-sm font-medium rounded-lg hover:bg-gray-900 shadow-sm"
             >
-                Back to Banner Maker
+                Manage Prompts
             </Link>
 
             <div className="relative container mx-auto px-4 py-16 flex items-center justify-center min-h-screen">
