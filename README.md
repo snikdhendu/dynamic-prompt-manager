@@ -114,4 +114,4 @@ Your application should now be running at `http://localhost:3000`.
 5. The tool will show the generated text content based on the active version of the prompt you selected.
 
 ---
-**Video Walkthrough:** 
+**Video Walkthrough:**  [\[Youtube Video\]](https://youtu.be/RuIJdD48rAg)
