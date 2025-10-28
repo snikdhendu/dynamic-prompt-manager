@@ -6,7 +6,7 @@ import "./global.css"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "GrowEasy Assignment",
+    title: "Dynamic Prompt Manager",
     description: "Prompt Management System",
 };
 
